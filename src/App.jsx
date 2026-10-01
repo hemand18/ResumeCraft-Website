@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const APK_PATH = "https://github.com/hemand18/ResumeCraft-Website/releases/download/v1.0.0/ResumeCraft.apk";
+const APK_PATH = `${import.meta.env.BASE_URL}downloads/ResumeCraft.apk`;
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
