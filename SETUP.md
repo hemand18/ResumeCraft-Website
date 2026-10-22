@@ -28,10 +28,16 @@ Open the local Vite URL shown in the terminal and click **Download for Android**
 npm run build
 ```
 
-The production files will be in `dist/`.
+The production files will be in `dist/`. This default build uses the site root, as expected by Vercel.
 
 ## 5. Deploy
 This project is ready for Vercel, Netlify, or GitHub Pages. Keep `ResumeCraft.apk` inside `public/downloads/` before deployment.
+
+The GitHub Pages workflow builds with its repository subpath automatically. For a manual GitHub Pages build, use:
+
+```bash
+npm run build -- --base=/ResumeCraft-Website/
+```
 
 ### Important
 The website does not create the APK. It hosts and serves the APK you already built with Flutter.
